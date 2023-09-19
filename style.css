@@ -1,0 +1,100 @@
+h1 {
+    text-align: center;
+  }
+
+  *{
+    box-sizing: border-box;
+  }
+
+  body{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    margin: 0;
+    padding: 0;
+    }
+
+  .box{
+    width: 100%;
+    overflow: none;
+    }
+
+  .content{
+    overflow: none;
+    height: auto;
+    width: 95%;
+    padding: 2%;
+    padding-top: 30px;
+    margin: 2.5%;
+    border: 5px solid;
+    background-color: lightgray;
+    text-align: center;
+}
+
+
+.sub{
+    border: 3.5px solid;
+    font-size: 125%;
+    font-weight: bold;
+    width: 100px;
+    padding: 5px;
+    text-align: center;
+    margin: -1px 16px 1px;
+    float: right;
+
+}
+
+.dish1{
+    background-color: paleturquoise;
+}
+.dish2{
+    background-color: blanchedalmond;
+}
+.dish3{
+    background-color: aliceblue;
+}
+
+@media (min-width: 992px) {
+    .col-lg-4 {
+        float: left;
+      width: 33.33%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+  }
+  
+  @media (min-width: 768px) and (max-width: 991px) {
+    .col-md-6,.col-md-12 {
+      float: left;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .col-md-6 {
+      width: 50%;
+    }
+    .col-md-12 {
+        margin-left: -10px;
+        width: 100%;
+  }
+  .col-md-12 .content{
+    width: 97%;
+  }
+  .dish1,.dish2{
+    margin: 1px 11px 1px;
+  }
+  .dish3{
+    margin: 0px 5px 9px;
+  }
+}
+
+  
+  @media (min-width: 0px) and (max-width: 767px) {
+    .col-sm-12 {
+        float: left;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .sub{
+      margin: 0px 18px;
+    }
+  }
